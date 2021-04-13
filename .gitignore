@@ -101,3 +101,7 @@ fabric.properties
 .idea/artifacts/
 src/main/resources/
 src/test/
+/BackEnd/target/
+/frontend-javafx/target/
+/mavenproject1/FrontEnd-JavaSwing/target/
+/FrontEnd-JavaSwing/target/
