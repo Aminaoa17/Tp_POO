@@ -12,5 +12,5 @@ package upac.tp.java.backend.repository;
 
 
 public interface StudentRepositoryInterface {
-    
+    //
 }
