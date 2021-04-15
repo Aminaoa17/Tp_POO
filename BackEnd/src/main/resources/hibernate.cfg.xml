@@ -24,6 +24,5 @@
          root123
       </property>
       
-      
    </session-factory>
 </hibernate-configuration>
