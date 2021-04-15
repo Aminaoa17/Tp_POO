@@ -14,5 +14,4 @@ import upac.tp.java.backend.entity.StudentEntity;
  */
 
 
-public interface StudentRepositoryInterface extends JpaRepository<StudentEntity, Long>{
-}
+public interface StudentRepositoryInterface extends JpaRepository<StudentEntity, Long>{}
