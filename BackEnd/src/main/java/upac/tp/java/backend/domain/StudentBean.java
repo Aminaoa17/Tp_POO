@@ -5,6 +5,7 @@
  */
 package upac.tp.java.backend.domain;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +18,7 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
+@Builder
 public class StudentBean {
     private int id;
     private String firstname;

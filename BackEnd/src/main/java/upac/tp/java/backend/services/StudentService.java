@@ -5,10 +5,12 @@
  */
 package upac.tp.java.backend.services;
 
+import upac.tp.java.backend.domain.StudentBean;
+
 /**
  *
  * @author ryank
  */
 public interface StudentService {
-
+ StudentBean getAllStudent();
 }
