@@ -13,7 +13,7 @@
       </property>
       
       <property name = "hibernate.connection.url">
-         jdbc:mysql://localhost/test
+         jdbc:mysql://localhost:3306/test
       </property>
       
       <property name = "hibernate.connection.username">
@@ -24,7 +24,6 @@
          root123
       </property>
       
-      <mapping resource = "Student.hbm.xml"/>
       
    </session-factory>
 </hibernate-configuration>
