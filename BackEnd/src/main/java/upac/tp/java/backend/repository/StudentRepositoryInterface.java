@@ -5,12 +5,8 @@
  */
 package upac.tp.java.backend.repository;
 
-/**
- *
- * @author ryank
- */
+import org.springframework.data.jpa.repository.JpaRepository;
+import upac.tp.java.backend.entity.StudentEntity;
 
 
-public interface StudentRepositoryInterface {
-    //
-}
+public interface StudentRepositoryInterface extends JpaRepository<StudentEntity, Long>{}
