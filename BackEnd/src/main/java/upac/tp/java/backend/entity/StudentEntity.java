@@ -5,18 +5,13 @@
  */
 package upac.tp.java.backend.entity;
 
-import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.domain.Persistable;
+
+import javax.persistence.*;
+import java.io.Serializable;
 
 /**
- *
  * @author ryank
  */
 
@@ -24,31 +19,19 @@ import org.springframework.data.domain.Persistable;
 @Table(name = "Student")
 @Getter
 @Setter
-public class StudentEntity implements Persistable<Long>, Serializable
-{
-    
-    @Id  
-    @GeneratedValue
+public class StudentEntity implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    
+
     @Column(name = "first_name")
     private String firstname;
-    
+
     @Column(name = "last_name")
     private String lastname;
-    
-    
-    
-public StudentEntity(){}
 
-    @Override
-    public Long getId() {
-       return id;
-    }
-
-    @Override
-    public boolean isNew() {
-        return id == null;
+    public StudentEntity() {
     }
 }
